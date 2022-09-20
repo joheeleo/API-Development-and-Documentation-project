@@ -207,7 +207,7 @@ def create_app(test_config=None):
                     'categories': categories,
                 })
 
-            except:
+            except Exception:
                 abort(400)
         else:
             abort(404)
